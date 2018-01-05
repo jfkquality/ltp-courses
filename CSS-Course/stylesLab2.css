@@ -1,0 +1,45 @@
+body {
+    width: 1000px;
+    height: 500px;
+    background-image: url("./SnoopyThanksgiving3.jpg");
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    /*background-position: center center;*/
+}
+h1 {
+    font-family: "Permanent Marker";
+}
+ul {
+    list-style-type: square;
+}
+#my_menu .submenu ul {
+    display: none;
+    position: fixed;
+    background-color: lightblue;
+    list-style-type: none;
+    border-left: 3px solid lightsalmon;
+    border-right: 3px solid lightsalmon;
+    border-bottom: 3px solid lightsalmon;
+    margin-top: 0px;
+    padding: 10px;
+}
+#my_menu .submenu:hover ul {
+    display: block;
+}
+#my_menu {
+    background-color: lightsalmon;
+    display: inline-block;
+    /*border: 3px solid darksalmon;*/
+}
+my_menu td {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+}
+.submenu li span {
+    display: none;
+    padding-right: 10px;
+}
+.submenu li:hover span {
+    display: inline-block;
+}
