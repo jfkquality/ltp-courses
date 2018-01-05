@@ -1,0 +1,17 @@
+#s3 {
+    display: block;
+}
+#p1, #p2 {
+    position: relative;
+    display: inline;
+}
+#img1 {
+    position: fixed;
+    left: 200px;
+    top: 300px;
+    z-index: -1;
+}
+#img2 {
+    position: absolute;
+    top: 500px;
+}
