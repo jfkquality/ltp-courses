@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First Javascript Program</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <style>
+            #touchTarget {
+                background-color: #990000;
+                color: white;
+                width: 200px;
+                height: 200px;
+                padding: 10px;
+            }
+        </style>
+        <script>
+            window.onload = function() {
+                document.getElementById('touchTarget').addEventListener('click', respond);
+            }
+            function respond(e) {
+                // alert("You clicked me!");
+                document.getElementById('touchTarget').style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="touchTarget"><h1>Touch Me!</h1></div>
+    </body>
+</html>

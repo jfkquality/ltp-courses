@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ch. 1 Where To Put JS Code</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <!-- <script> // JS in <script> tags not recommended. Use a separate .js fie.
+            window.onload = function() {
+            document.getElementById('myButton').addEventListener('click', respond);
+            }
+            function respond(e) {
+                alert("Thanks for clicking");
+            }
+        </script> -->
+        <!-- <script src="./ch1-L2.js"></script>  -->
+    </head>
+    <body>
+        <h1>The quick brown fox jumped over the lazy dog</h1>
+        <!-- <button onclick="alert('Thanks for clicking')">Click Me</button> --> <!-- Not good: inline JS -->
+        <button id="myButton">Click Me</button>
+        <script src="./ch1-L2.js"></script> 
+    </body>
+</html>
