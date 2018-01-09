@@ -6,9 +6,7 @@ document.getElementById('addingButton').addEventListener('click', addNumbers);
 
 function addNumbers(e) {
     number1 = Number(document.getElementById('inputOne').value);
-    console.log(number1);
     number2 = Number(document.getElementById('inputTwo').value);
-    console.log(number2);
     let oper = document.getElementById('operators').value;
     if (oper === '+') {
         total = number1 + number2;
