@@ -6,15 +6,17 @@ window.onload = function() {
 }
 
 function chooseRPS(e) {
+    let answer = "";
     randomNumber = Math.floor((Math.random() * 3) +1)
     console.log(randomNumber)
     if (randomNumber == 1) {
-        document.getElementById('result').innerHTML = "<h1>Rock!</h1>";
+        answer = "Rock!";
     }
     if (randomNumber == 2) {
-        document.getElementById('result').innerHTML = "<h1>Paper!</h1>";
+        answer = "Paper!";
     }
     if (randomNumber == 3) {
-        document.getElementById('result').innerHTML = "<h1>Scissors!</h1>";
+        answer = "Scissors!";
     }
+    document.getElementById('result').innerHTML = "<h1>" + answer + "</h1>";
 }
