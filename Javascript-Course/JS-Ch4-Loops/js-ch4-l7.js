@@ -8,14 +8,16 @@ function calcInterest(e) {
     let principal = +document.getElementById('principal').value;
     let months = +document.getElementById('periods').value;
     let APR = +document.getElementById('rate').value;
-    let intMonth = APR / 12 / 100
+    let intPerMonth = APR / 12 / 100
     out = document.getElementById('result').innerHTML;
-    out += "Mth   Principal   Intereest  Balance<br>";
+    out += "<table>"
+    out += "<tr><th>Month</th><th>Intereest</th><th>Balance</th></tr>";
     for (let i = 1; i <= months; i++) {
-        interestAmt = principal * intMonth * i;
+        interestAmt = principal * intPerMonth * i;
         newBalance = principal + interestAmt;
-        out += i + " " + principal + " " + interestAmt + " " + newBalance + "<br>" 
+        out += "<tr><td>" + i + "</td><td>" + interestAmt + "</td><td>" + newBalance + "</td></tr>" ;
     }
+    out += "</table>";
     document.getElementById('result').innerHTML = out;
     // document.write(out);
 }
