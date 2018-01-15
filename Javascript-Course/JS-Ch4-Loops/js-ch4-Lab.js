@@ -31,4 +31,5 @@ function findName(e) {
             document.getElementById('result').innerHTML += countNames[i] + "<br>";
         }
     }
+    document.getElementById('result').innerHTML += "<h3>Number of times found: " + (countNames.length - 1) + "</h3>";
 }
