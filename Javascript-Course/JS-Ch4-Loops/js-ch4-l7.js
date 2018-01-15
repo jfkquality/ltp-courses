@@ -12,7 +12,7 @@ function calcInterest(e) {
     let intPerMonth = APR / 12 / 100
     out = document.getElementById('result').innerHTML;
     out += "<table><tbody>"
-    out += "<thead><tr><th>Month</th><th>Intereest</th> <th>Balance</th></tr></thead>";
+    out += "<thead><tr><th>Month</th><th>Interest</th> <th>Balance</th></tr></thead>";
     out += "<tbody>";
     interestAmt = principal * intPerMonth;
     for (let i = 1; i <= months; i++) {
