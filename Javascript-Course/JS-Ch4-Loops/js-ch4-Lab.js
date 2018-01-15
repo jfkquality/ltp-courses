@@ -7,7 +7,6 @@ function findName(e) {
     let nameToFind = document.getElementById("name").value;
     let randomText = document.getElementById("randomText").value;
     let countNames = [["Name Found", "Position Found"]];
-    console.log(randomText, nameToFind);
 
     for (let x=0; x < randomText.length; x++) {
         let nameFound = "";
@@ -23,10 +22,10 @@ function findName(e) {
             countNames.push([nameFound, x]);
         }
     }
-    console.log(countNames);
     if (countNames.length == 1) {
         document.getElementById('result').innerHTML = "Name not found.";
-    } else {
+    } 
+    else {
         for (let i = 0; i < countNames.length; i++) {
             document.getElementById('result').innerHTML += countNames[i] + "<br>";
         }
