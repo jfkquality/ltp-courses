@@ -7,6 +7,7 @@ function findName(e) {
     let nameToFind = document.getElementById("name").value;
     let randomText = document.getElementById("randomText").value;
     let countNames = [["Name Found", "Position Found"]];
+    let out = "";
 
     for (let x=0; x < randomText.length; x++) {
         let nameFound = "";
@@ -18,17 +19,18 @@ function findName(e) {
                 }
             }
         }
-        if (nameFound.length == nameToFind.length) {
+        if (nameFound.toUpperCase() == nameToFind.toUpperCase()) {
             countNames.push([nameFound, x]);
         }
     }
     if (countNames.length == 1) {
-        document.getElementById('result').innerHTML = "Name not found.";
+        out = "Name not found.";
     } 
     else {
         for (let i = 0; i < countNames.length; i++) {
-            document.getElementById('result').innerHTML += countNames[i] + "<br>";
+            out += countNames[i] + "<br>";
         }
     }
-    document.getElementById('result').innerHTML += "<h3>Number of times found: " + (countNames.length - 1) + "</h3>";
+    out += "<h3>Number of times '" + nameToFind + "' found: " + (countNames.length - 1) + "</h3>";
+    document.getElementById('result').innerHTML = out;
 }
