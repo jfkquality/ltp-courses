@@ -1,0 +1,12 @@
+#targetA, #targetB {
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+#targetA {
+    background-color: #990000;
+}
+#targetB {
+    background-color: blue;
+    margin-top: 20px;
+}
