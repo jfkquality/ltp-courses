@@ -16,7 +16,9 @@ window.onload = function() {
         alert("You hovered over the blue box");
     }
     window.onkeypress = (e) => {
-        alert("You pressed a key");
+        console.log(e);
+        let keyPressed = e.key;
+        alert("You pressed '" + keyPressed + "'.");
     }
 
     result = document.getElementById('result');
