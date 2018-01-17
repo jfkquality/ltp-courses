@@ -10,7 +10,7 @@ window.onload = function() {
     targetA.onclick = (e) => {
         let x = e.clientX;
         let y = e.clientY;
-        alert("You clicked on the red box at coordinates " + x + ", " + y +".");
+        alert("You clicked on the red box at x, y coordinates " + x + ", " + y +".");
     }
     targetB.onmouseover = () => {
         alert("You hovered over the blue box");
