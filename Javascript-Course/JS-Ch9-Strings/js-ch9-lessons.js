@@ -25,8 +25,15 @@ window.onload = function() {
         out += myString.charAt(x);
     }
 
+    out += "<br><br>Or... print each word using split()";
+    out += "<br>(Done after the split() lessson below.)";
+    let splitString = myString.split(" ");
+    for (let x = 0; x < splitString.length; x++) {
+        out += "<br>" + splitString[x];
+    }
+
     out += "<br><h1>search(), replace()</h1>";
-    out += "<br>searh for lazy " + myString.search("lazy");
+    out += "<br>search for lazy " + myString.search("lazy");
     out += "<br>replace quick with slow in myString. " + myString.replace("quick", "slow");
     out += "<br>myString = " + myString;
     out += "<br><h3>replace() does NOT change the original string.</h3>"
