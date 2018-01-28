@@ -1,14 +1,16 @@
 window.onload = function() {
     let myString = "The quick brown fox jumped over the lazy dog.";
     // alert(myString.charAt(0));
-    let out = myString;
+    let out = "<h1>String Methods</h1>";
+    out += myString;
     
     out += "<br><h1>charAt(), includes(), indexOf()</h1>";
     out += "<br>charAt 0 = " + myString.charAt(0);
     out += "<br>includes space = " + myString.includes(" ");
     out += "<br>indexOf space = " + myString.indexOf(" ");
 
-    out += "<br><br>Loop through myString and output each word separately";
+    out += "<br><br>Loop through myString letter by letter and output each word separately";
+    out += "<br>(Uses for loop with continue.)"
     let lastSpace = 0;
     for (let x = 0; x < myString.length; x++) {
         if (myString.charAt(x) != " ") {
@@ -18,16 +20,18 @@ window.onload = function() {
         for (let y = lastSpace; y < x; y++) {
             out += myString.charAt(y);
         }
-        lastSpace = x+1;
+        lastSpace = x + 1;
     }
     out += "<br>";
+    // Get the last word of the string (b/c there's no space at the end)
     for (let x = lastSpace; x < myString.length; x++) {
         out += myString.charAt(x);
     }
 
-    out += "<br><br>Or... print each word using split()";
+    out += "<br><br>Or... print each word using split() on spaces.";
     out += "<br>(Done after the split() lessson below.)";
     let splitString = myString.split(" ");
+    out += "<br>String array: " + splitString;
     for (let x = 0; x < splitString.length; x++) {
         out += "<br>" + splitString[x];
     }
@@ -45,9 +49,11 @@ window.onload = function() {
     out += "<br><h3>Split()</h3>";
     let csv = "One, Two, Three, Four, Five, Six, Seven";
     let csvArray = csv.split(",");
-    out += "<br>" + csvArray;
+    out += "<br>String: " + csv;
+    out += "<br>Split string array: " + csvArray;
+    out += "<br>Index   Value";
     for (let x = 0; x < csvArray.length; x++) {
-        out += "<br>" + csvArray[x];
+        out += "<br>" + x + ": " + csvArray[x];
     }
 
     out += "<br><h3>substring()</h3>";
