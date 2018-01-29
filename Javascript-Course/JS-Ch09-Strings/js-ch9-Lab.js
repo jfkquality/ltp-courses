@@ -11,7 +11,8 @@ window.onload = function() {
     out += "<br>Slice first letter: " + myString.slice(1);
 
     out += "<h2>Sorting the split string</h2>";
-    out +=  capString.split(" ").sort();
+    out += "Original: " + myString.split(" ").sort();
+    out += "<br>Capitalized: " + capString.split(" ").sort();
 
     out += "<br><br>Original String"
     for (let x = 0; x < myString.split(" ").length; x++) { 
