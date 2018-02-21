@@ -1,18 +1,24 @@
-h1 {
-    width: 300px;
-    height: 50px;
+div {
+    width: 100px;
+    height: 100px;
     background-color: red;
-}
-h1:hover {
+    /* position: relative; */
+/* }
+div:hover { */
     animation-name: colorChange;
-    animation-duration: 10s;
-    animation-iteration-count: infinite
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode: both; */
 }
 @keyframes colorChange {
-    0% {background-color: red;}
+    /* 0% {background-color: red;}
     20% {background-color: blue;}
     40% {background-color: yellow;}
     60% {background-color: green;}
     80% {background-color: orange;}
-    100% {background-color: purple;}
+    100% {background-color: purple;} */
+    0% { transform: translate(200px, 200px); }
+    50% { transform: translate(600px, 600px); }
+    75% { transform: translate(0px, 0px); }
+    100% { transform: translate(300px, 300px); }
 }
