@@ -5,7 +5,7 @@ let result;
 window.onload = function() {
     targetA = document.getElementById('targetA');
     targetB = document.getElementById('targetB');
-    // targetA.addEventListener('click', clickEvent);
+    targetA.addEventListener('click', clickEvent);
     // targetB.addEventListener('mouseOver', hoverEvent);
     targetA.onclick = (e) => {
         let x = e.clientX;

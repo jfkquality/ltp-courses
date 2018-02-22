@@ -1,8 +1,10 @@
 window.onload = function() {
-    document.title = "lesson title";
+    document.title = "DOM Elements getElementById, innerHTML";
     let out = "<h1>" + document.title + "</h1>";
     
-    out += "<br>" + "";
+    document.getElementById('main').innerHTML += "<p>This element was added dynamically</p>";
+    console.log(document.getElementById("main"));
 
+    out += "<br>" + "";
     document.getElementById('result').innerHTML = out;
 }
