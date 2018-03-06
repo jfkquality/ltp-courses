@@ -1,11 +1,17 @@
 // Also here (snapshot): http://jsbin.com/wogobahoqe/edit?js,console
 // Latest changes: http://jsbin.com/wogobahoqe/edit?js,console
+<<<<<<< HEAD
 // Even latest changes: http://jsbin.com/wogobahoqe/edit?js,console
+=======
+>>>>>>> 40e66ca09add0e2c44c27985d930e0ffdefd810e
 
 // How to change operators: and here http://jsbin.com/japarediko/edit?js,console
 //https://stackoverflow.com/questions/5834318/are-variable-operators-possible
 /* 
+<<<<<<< HEAD
 e.g. 1.
+=======
+>>>>>>> 40e66ca09add0e2c44c27985d930e0ffdefd810e
 var operators = {
     '+': function(a, b) { return a + b; },
     '<': function(a, b) { return a < b; },
@@ -95,7 +101,11 @@ function sortNums(arr, ascending) {
      swap = false;
      for (let i = 0; i < arr.length-1; i++) {
        first = arr[i];
+<<<<<<< HEAD
        if (UpDown[direction](first, arr[i+1])) {
+=======
+       if (operators[direction](first, arr[i+1])) {
+>>>>>>> 40e66ca09add0e2c44c27985d930e0ffdefd810e
          swap = true;
          arr[i] = arr[i+1];
          arr[i+1] = first;
