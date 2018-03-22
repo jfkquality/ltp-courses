@@ -1,14 +1,17 @@
 let xmlhttp;
 window.onload = function() {
-    document.title = "JS Ch. 14 L1 - Get JSON Data";
+    document.title = "JS Ch. 15 L2 - Geolocation";
     let out = "<h1>" + document.title + "</h1>";
 
     navigator.geolocation.getCurrentPosition(success, fail);
+}
 
     function success(position) {
+        console.log(position);
         let lat = position.coords.latitude;
         let lng = position.coords.longitude;
-        // alert(lat + " " + lng);
+        latitude.innerHTML += lat;
+        longitude.innerHTML += lng;
         getPositionInfo(lat, lng);
     }
     function fail(e) {
@@ -38,4 +41,3 @@ window.onload = function() {
 
     out += "<br>" + "";
     document.getElementById('result').innerHTML = out;
-}
